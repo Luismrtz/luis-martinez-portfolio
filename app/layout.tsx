@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { ReactNode } from "react";
+import Navbar from "@/components/Navbar";
 
 const rem = localFont({
   src: [
@@ -22,6 +23,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en" className="h-full">
       <body className={`${rem.variable}  antialiased min-h-full`}>
+        <Navbar />
         {children}
       </body>
     </html>

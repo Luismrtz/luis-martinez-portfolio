@@ -45,9 +45,7 @@ export function CTAButton({
         "cta",
         "relative inline-flex items-center justify-center rounded-full px-8 py-3",
         "text-primary border border-primary/25 bg-primary/8",
-        "focus:outline-none focus-visible:outline-none",
-        "focus-visible:ring-2 focus-visible:ring-light-blue/60",
-        "focus-visible:ring-offset-2 focus-visible:ring-offset-bgc",
+        "btn-focus",
         className
       )}
     >
