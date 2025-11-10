@@ -3,8 +3,8 @@
 
 @theme {
   --color-bgc: #0b0b10;
-  --color-bgc-deep: #09090c;
-  --color-primary: #f5f7fa;
+  --color-primary: hsla(216, 33%, 97%, 0.95);
+  --color-primary-dim: hsla(216, 33%, 97%, 0.75);
   --color-light-blue: #38bdf8;
 
   --font-rem: var(--font-rem), serif;
@@ -44,6 +44,18 @@
 }
 
 @layer utilities {
+  /* WIP may use this if changing to transparent navbar, commenting out for now  */
+  /* .nav-box-shadow {
+    box-shadow: 0 1px rgba(255, 255, 255, 0.05), 0 3px 6px rgba(0, 0, 0, 0.5);
+  } */
+  .btn {
+    @apply rounded-full text-primary hover:text-light-blue focus-visible:text-light-blue active:text-light-blue active:bg-primary/5 transition-colors;
+  }
+
+  .btn-outline {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-light-blue/60 focus-visible:ring-offset-2 focus-visible:ring-offset-bgc;
+  }
+
   .cta {
     overflow: hidden;
     will-change: transform;
